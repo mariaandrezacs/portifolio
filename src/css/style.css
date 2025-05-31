@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* BASE */
 body {
     font-family: Arial, sans-serif;
     color: #0f0c0c;
@@ -17,7 +18,6 @@ body {
     min-height: 100vh;
 }
 
-/* TIPOGRAFIA */
 h1, h2, h3 {
     color: #070606;
 }
@@ -55,146 +55,7 @@ nav a {
     color: rgb(35, 12, 169);
 }
 
-/* CONTEÚDO PRINCIPAL */
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-}
-
-/* SEÇÃO DE HABILIDADES */
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.card {
-    width: 300px;
-    height: 200px;
-    position: relative;
-    border-radius: 15px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.5s ease;
-    background-color: #333;
-}
-
-.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.card-info {
-    position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: white;
-    opacity: 1; /* <-- Agora sempre visível */
-    z-index: 2;
-}
-
-.card:hover {
-    transform: scale(1.1);
-    z-index: 2;
-}
-
-.card:hover img {
-    filter: none;
-}
-
-
-.card-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.card-text {
-    font-size: 1rem;
-}
-
-/* PROJETOS */
-.projetos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.projeto-item {
-    background: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    transition: transform 0.3s ease;
-}
-
-.projeto-item:hover {
-    transform: scale(1.05);
-}
-
-.projeto-item img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-/* CONTATO */
-.contato {
-    padding: 20px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-}
-
-.contato ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding: 0;
-}
-
-.contato a {
-    font-size: 24px;
-    color: white;
-    transition: color 0.3s;
-}
-
-.contato a:hover {
-    color: #3498db;
-}
-
-/* RODAPÉ */
-footer {
-    text-align: center;
-    padding: 15px;
-    color: rgb(35, 12, 169);
-    background-color: rgba(255, 255, 255, 0.8);
-    font-size: 14px;
-}
-
-/* FOTO DE PERFIL - Ajuste de tamanho para desktop e mobile */
-.foto-perfil {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    margin-top: 20px;
-}
-
-/* BOTÃO MENU TOGGLE - padrão escondido no desktop */
+/* BOTÃO MENU TOGGLE */
 .menu-toggle {
     display: none;
     background: none;
@@ -205,13 +66,22 @@ footer {
     margin-left: 10px;
 }
 
-/* Foco para acessibilidade */
 .menu-toggle:focus {
     outline: 2px solid #3498db;
     outline-offset: 2px;
 }
 
-/* SEÇÃO SOBRE - texto e foto lado a lado */
+/* CONTEÚDO PRINCIPAL */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* SEÇÃO SOBRE */
 .sobre-container {
     display: flex;
     align-items: center;
@@ -229,37 +99,153 @@ footer {
     flex: 0 0 auto;
 }
 
+.foto-perfil {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+/* HABILIDADES */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-info {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: black;
+    z-index: 2;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.card:hover img {
+    filter: none;
+}
+
+
+/* PROJETOS */
+.cards-projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.cards-projetos .card-projetos {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    width: 455px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards-projetos .card-projetos:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.cards-projetos .card-info-projetos {
+    text-align: left;
+}
+
+.cards-projetos .card-title-projetos {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #4dabf7;
+}
+
+.cards-projetos .card-text-projetos {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* CONTATO */
+.contato {
+    padding: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.contato ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.contato a {
+    font-size: 24px;
+    color: black;
+    transition: color 0.3s;
+}
+
+.contato a:hover {
+    color: #3498db;
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    padding: 15px;
+    color: rgb(35, 12, 169);
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+}
+
 /* RESPONSIVO */
 @media (max-width: 768px) {
-    /* Ajusta o container sobre para coluna e gap menor */
-
-
-    .sobre-container {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;          /* diminui ainda mais o espaçamento entre os itens */
-        /*margin-bottom: 20px; /* reduz a margem inferior */
-    }
-
-    .texto-sobre {
-        flex: 1 1 100px;
-        max-width: 300px;
-    }
-
-    .foto-perfil {
-        width: 300px;
-        height: 300px;
-        margin: 0 auto;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-
     header {
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
         padding: 10px 15px;
         position: relative;
     }
@@ -289,9 +275,43 @@ footer {
         margin: 10px 0;
     }
 
-    /* Mostrar botão menu toggle no mobile */
     .menu-toggle {
         display: block;
+    }
+
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .texto-sobre {
+        flex: 1 1 100px;
+        max-width: 300px;
+    }
+
+    .foto-perfil {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    #projetos {
+        padding: 40px 10px;
+    }
+
+    #projetos h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .cards-projetos .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
     }
 }
 
@@ -314,9 +334,5 @@ footer {
 
     nav ul {
         font-size: 16px;
-    }
-
-    .contato ul {
-        flex-wrap: wrap;
     }
 }
