@@ -98,8 +98,7 @@ nav a {
     transform: translateX(-50%);
     text-align: center;
     color: white;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    opacity: 1; /* <-- Agora sempre visível */
     z-index: 2;
 }
 
@@ -109,12 +108,9 @@ nav a {
 }
 
 .card:hover img {
-    filter: brightness(0.5) blur(2px);
+    filter: none;
 }
 
-.card:hover .card-info {
-    opacity: 1;
-}
 
 .card-title {
     font-size: 1.5rem;
@@ -182,8 +178,8 @@ nav a {
 footer {
     text-align: center;
     padding: 15px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(35, 12, 169);
+    background-color: rgba(255, 255, 255, 0.8);
     font-size: 14px;
 }
 
@@ -219,7 +215,7 @@ footer {
 .sobre-container {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 200px;
     flex-wrap: wrap;
     margin-bottom: 60px;
 }
@@ -251,8 +247,8 @@ footer {
     }
 
     .foto-perfil {
-        width: 180px;
-        height: 180px;
+        width: 300px;
+        height: 300px;
         margin: 0 auto;
     }
 
