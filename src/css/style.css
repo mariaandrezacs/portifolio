@@ -1,0 +1,326 @@
+/* RESET GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #0f0c0c;
+    background-color: #ebebeb;
+    background-image: url(/imgs/BZRR6169.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* TIPOGRAFIA */
+h1, h2, h3 {
+    color: #070606;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* CABEÇALHO */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+header h1 {
+    color: rgb(35, 12, 169);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+}
+
+nav a {
+    color: rgb(35, 12, 169);
+}
+
+/* CONTEÚDO PRINCIPAL */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* SEÇÃO DE HABILIDADES */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    background-color: #333;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-info {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.card:hover img {
+    filter: brightness(0.5) blur(2px);
+}
+
+.card:hover .card-info {
+    opacity: 1;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+/* PROJETOS */
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.projeto-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.projeto-item:hover {
+    transform: scale(1.05);
+}
+
+.projeto-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* CONTATO */
+.contato {
+    padding: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.contato ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+
+.contato a {
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.contato a:hover {
+    color: #3498db;
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    padding: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+}
+
+/* FOTO DE PERFIL - Ajuste de tamanho para desktop e mobile */
+.foto-perfil {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+/* BOTÃO MENU TOGGLE - padrão escondido no desktop */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: rgb(35, 12, 169);
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Foco para acessibilidade */
+.menu-toggle:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
+
+/* SEÇÃO SOBRE - texto e foto lado a lado */
+.sobre-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.texto-sobre {
+    flex: 1 1 300px;
+    max-width: 600px;
+}
+
+.foto-container {
+    flex: 0 0 auto;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    /* Ajusta o container sobre para coluna e gap menor */
+
+
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;          /* diminui ainda mais o espaçamento entre os itens */
+        /*margin-bottom: 20px; /* reduz a margem inferior */
+    }
+
+    .texto-sobre {
+        flex: 1 1 100px;
+        max-width: 300px;
+    }
+
+    .foto-perfil {
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        position: relative;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav.menu ul {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.95);
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        padding: 10px 20px;
+        z-index: 999;
+    }
+
+    nav.menu ul.show {
+        display: flex;
+    }
+
+    nav.menu ul li {
+        margin: 10px 0;
+    }
+
+    /* Mostrar botão menu toggle no mobile */
+    .menu-toggle {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-attachment: scroll;
+    }
+
+    .container {
+        padding: 20px 10px;
+    }
+
+    .card-info .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-info .card-text {
+        font-size: 0.9rem;
+    }
+
+    nav ul {
+        font-size: 16px;
+    }
+
+    .contato ul {
+        flex-wrap: wrap;
+    }
+}
