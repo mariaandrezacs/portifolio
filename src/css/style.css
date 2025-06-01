@@ -109,6 +109,20 @@ nav a {
     margin-top: 20px;
 }
 
+/* APRESENTAÇÃO */
+
+.apresentacao h2 {
+    margin-bottom: 10px;
+}
+
+.apresentacao h3 {
+    margin-bottom: 10px;
+}
+
+.apresentacao p {
+    margin-bottom: 15px;
+}
+
 /* HABILIDADES */
 .cards {
     display: flex;
@@ -146,7 +160,7 @@ nav a {
 }
 
 .card-title {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -164,6 +178,11 @@ nav a {
     filter: none;
 }
 
+#habilidades h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
 
 /* PROJETOS */
 .cards-projetos {
@@ -172,7 +191,6 @@ nav a {
     justify-content: center;
     gap: 20px;
 }
-
 
 .cards-projetos .card-projetos {
     background-color: rgba(255, 255, 255, 0.8);
@@ -205,12 +223,22 @@ nav a {
     line-height: 1.5;
 }
 
+#projetos h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
 /* CONTATO */
 .contato {
     padding: 20px;
     color: white;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
+}
+
+#contato h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
 }
 
 .contato ul {
@@ -282,7 +310,7 @@ footer {
     .sobre-container {
         flex-direction: column;
         text-align: center;
-        gap: 10px;
+        gap: 20px;
     }
 
     .texto-sobre {
@@ -296,16 +324,30 @@ footer {
         margin: 0 auto;
     }
 
+    #habilidades h2 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
     #projetos {
         padding: 40px 10px;
     }
 
     #projetos h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-bottom: 30px;
     }
 
-    .cards-projetos .card {
+    .cards .card {
+        width: 200px;
+        max-width: 350px;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .cards-projetos .card-projetos {
         width: 100%;
         max-width: 350px;
     }
