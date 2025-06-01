@@ -230,35 +230,49 @@ nav a {
 
 /* CONTATO */
 .contato {
-    padding: 20px;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
+    max-width: 930px; /* limite de largura */
+    margin: 0 auto; /* centraliza */
+    padding: 30px 20px;
+    color: #1a1a1a;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 #contato h2 {
     font-size: 2rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.contato p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 .contato ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     padding: 0;
     flex-wrap: wrap;
+    font-size: x-large;
 }
 
 .contato a {
     font-size: 24px;
-    color: black;
-    transition: color 0.3s;
+    color: rgb(3, 8, 10);
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .contato a:hover {
     color: #3498db;
+    transform: scale(1.1);
 }
+
 
 /* RODAPÉ */
 footer {
