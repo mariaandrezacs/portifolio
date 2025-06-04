@@ -2,7 +2,7 @@
 
 Este repositório contém o código-fonte do meu portfólio profissional — um site pessoal desenvolvido para apresentar meus projetos, habilidades, experiências e formas de contato.
 
-> ⚠️ **Este portfólio ainda está em construção.** Estou desenvolvendo novas seções, ajustando o design e preparando os detalhes para o lançamento oficial.
+> ⚠️ **Este portfólio ainda está em construção.** Estou desenvolvendo novas seções, ajustando o design e preparando os detalhes.
 
 ## ✨ Funcionalidades previstas
 
