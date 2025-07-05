@@ -55,6 +55,11 @@ nav a {
     color: rgb(35, 12, 169);
 }
 
+.name-title {
+    font-style: italic;
+    
+}
+
 /* BOTÃO MENU TOGGLE */
 .menu-toggle {
     display: none;

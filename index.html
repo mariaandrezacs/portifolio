@@ -1,174 +1,199 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MACS | DEV</title>
-  <link rel="icon" href="src/imgs/foto-icon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
-  <link rel="stylesheet" href="src/css/style.css" />
-</head>
-<body>
-  <header>
-    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu" role="button">
-      <i class="fa fa-bars"></i>
-    </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MACS | DEV</title>
+    <link rel="icon" href="src/imgs/foto-icon.png" type="image/x-icon" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"
+        aria-controls="menu" role="button">
+        <i class="fa fa-bars"></i>
+      </button>
 
-    <h1>Macs | Desenvolvedora Web</h1>
+      <h1 class="name-title"> &lt; Maria Andreza /&gt;</h1>
 
-    <nav class="menu" id="menu">
-      <ul>
-        <li><a href="#sobre">Sobre Mim</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="container">
-
-    <!-- Sobre Mim -->
-    <section id="sobre" class="sobre-container apresentacao"">
-      <div class="texto-sobre">
-        <h2>Bem-vindo(a)!</h2>
-        <h3>Eu sou Maria Andreza</h3>
-        <p>Desenvolvedora Web</p>
-        <p>Tenho interesse em tecnologia e desenvolvimento web. Busco criar aplicações funcionais, com foco em usabilidade, performance e acessibilidade. Estou em constante aprendizado e aberta a desafios que contribuam para meu crescimento profissional.</p>
-      </div>
-
-      <div class="foto-container">
-        <img src="src/imgs/BZRR6169.jpg" alt="Foto de perfil" class="foto-perfil"/>
-      </div>
-    </section>
-
-    <!-- Habilidades -->
-    <section id="habilidades" class="habilidades-container">
-      <h2>Stack de Desenvolvimento</h2>
-      <div class="cards">
-        <article class="card">
-          <div class="card-info">
-            <h3 class="card-title">Python</h3>
-            <p class="card-text">Linguagem principal para desenvolvimento web e automações.</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-info">
-            <h3 class="card-title">Django</h3>
-            <p class="card-text">Framework robusto para aplicações web escaláveis.</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-info">
-            <h3 class="card-title">Flask</h3>
-            <p class="card-text">Microframework em Python para criação de APIs e aplicações web.</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-info">
-            <h3 class="card-title">HTML5</h3>
-            <p class="card-text">Estrutura semântica de páginas modernas.</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-info">
-            <h3 class="card-title">CSS3</h3>
-            <p class="card-text">Estilização responsiva e design elegante.</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-info">
-            <h3 class="card-title">Django Rest Framework</h3>
-            <p class="card-text">Criação de APIs RESTful com autenticação e filtros.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Projetos -->
-    <section id="projetos" class="projetos-container">
-      <h2>Meus Projetos</h2>
-      <div class="cards-projetos">
-        <article class="card-projetos">
-          <div class="card-info-projetos">
-            <a href="https://github.com/mariaandrezacs/sample-flask-auth">
-              <h3 class="card-title-projetos">Sample Flask Auth</h3>
-            </a>
-            <p class="card-text-projetos">Desenvolvimento de uma API de autenticação com integração a banco de dados utilizando Flask, SQLAlchemy e JWT.</p>
-          </div>
-        </article>
-
-        <article class="card-projetos">
-          <div class="card-info-projetos">
-            <a href="https://github.com/mariaandrezacs/tasks-flask-crud">
-              <h3 class="card-title-projetos">Task Flask CRUD</h3>
-            </a>
-            <p class="card-text-projetos">Projeto simples de CRUD utilizando Flask para gerenciamento de tarefas, com operações de criar, listar, editar e excluir.</p>
-          </div>
-        </article>
-
-        <article class="card-projetos">
-          <div class="card-info-projetos">
-            <a href="https://github.com/mariaandrezacs/curso-django" target="_blank">
-              <h3 class="card-title-projetos">Blog com Django</h3>
-            </a>
-            <p class="card-text-projetos">Projeto simples de blog construído com Django e Python.</p>
-          </div>
-        </article>
-
-        <article class="card-projetos">
-          <div class="card-info-projetos">
-            <a href="https://github.com/mariaandrezacs/applications-with-redis-python-and-flask" target="_blank">
-              <h3 class="card-title-projetos">Aplicações com Redis, Python e Flask</h3>
-            </a>
-            <p class="card-text-projetos">Aplicações simples utilizando Redis como banco de dados em projetos com Python e Flask.</p>
-          </div>
-        </article>
-
-
-
-      </div>
-    </section>
-
-    <!-- Contato -->
-    <section id="contato" class="contato-container">
-      <h2>Contatos</h2>
-      <div class="contato">
+      <nav class="menu" id="menu">
         <ul>
-          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+          <li><a href="#sobre">Sobre Mim</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#projetos">Conquistas e Certificações</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
-      </div>
+      </nav>
+    </header>
 
-      <div class="form">
-        <form action="">
-          <!-- Aqui você pode adicionar inputs futuramente -->
-        </form>
-      </div>
-    </section>
-  </main>
+    <main class="container">
 
-  <footer>
-    <strong>&copy; 2024 Macs. Todos os direitos reservados.</strong>
-  </footer>
+      <!-- Sobre Mim -->
+      <section id="sobre" class="sobre-container apresentacao"">
+        <div class="texto-sobre">
+          <h2>Olá, eu sou a Maria Andreza 👩‍💻</h2>
+          <p>Desenvolvedora web com foco em back-end, apaixonada por construir
+            soluções funcionais, seguras e bem estruturadas.</p>
+          <p>Gosto de resolver problemas com lógica, clareza e propósito — e
+            estou em constante aprendizado para evoluir como profissional e como
+            pessoa.</p>
+          <ul>
+            <a href="http://">git</a>
+            <a href="http://">linkedin</a>
+            <a href="http://">email</a>
+            <a href="http://">gitlab</a>
+            <a href="http://"></a>
+          </ul>
+          <button type="button">Entre em contato</button>
+          <button type="button">Baixar meu curriculo</button>
+        </div>
 
-  <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('nav.menu ul');
+        <div class="foto-container">
+          <img src="src/imgs/BZRR6169.jpg" alt="Foto de perfil"
+            class="foto-perfil" />
+        </div>
+      </section>
 
-    toggle.addEventListener('click', () => {
-      menu.classList.toggle('show');
+      <!-- Habilidades -->
+      <section id="habilidades" class="habilidades-container"">
+        <!-- <div class="foto-container">
+          <img src="src/imgs/code-21.gif" alt="Foto de perfil"
+            class="foto-perfil" />
+          <p>Trabalho principalmente com <strong>Python</strong>,
+            <strong>Django</strong> e <strong>APIs REST</strong>, mas estou
+            sempre explorando novas ferramentas para criar experiências
+            acessíveis e performáticas.</p> -->
+        </div>
+        <h2>Stack de Desenvolvimento</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-info">
+              <h3 class="card-title">Python</h3>
+              <p class="card-text">Linguagem principal para desenvolvimento web
+                e automações.</p>
+            </div>
+          </article>
 
-      const expanded = toggle.getAttribute('aria-expanded') === 'true' || false;
-      toggle.setAttribute('aria-expanded', !expanded);
-    });
-  </script>
-</body>
+          <article class="card">
+            <div class="card-info">
+              <h3 class="card-title">Django</h3>
+              <p class="card-text">Framework robusto para aplicações web
+                escaláveis.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-info">
+              <h3 class="card-title">Flask</h3>
+              <p class="card-text">Microframework em Python para criação de APIs
+                e aplicações web.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-info">
+              <h3 class="card-title">HTML5</h3>
+              <p class="card-text">Estrutura semântica de páginas modernas.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-info">
+              <h3 class="card-title">CSS3</h3>
+              <p class="card-text">Estilização responsiva e design elegante.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-info">
+              <h3 class="card-title">Django Rest Framework</h3>
+              <p class="card-text">Criação de APIs RESTful com autenticação e
+                filtros.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Projetos -->
+      <section id="projetos" class="projetos-container">
+        <h2>Meus Projetos</h2>
+        <div class="cards-projetos">
+          <article class="card-projetos">
+            <div class="card-info-projetos">
+              <a href="https://github.com/mariaandrezacs/sample-flask-auth">
+                <h3 class="card-title-projetos">Sample Flask Auth</h3>
+              </a>
+              <p class="card-text-projetos">Desenvolvimento de uma API de
+                autenticação com integração a banco de dados utilizando Flask,
+                SQLAlchemy e JWT.</p>
+            </div>
+          </article>
+
+          <article class="card-projetos">
+            <div class="card-info-projetos">
+              <a href="https://github.com/mariaandrezacs/tasks-flask-crud">
+                <h3 class="card-title-projetos">Task Flask CRUD</h3>
+              </a>
+              <p class="card-text-projetos">Projeto simples de CRUD utilizando
+                Flask para gerenciamento de tarefas, com operações de criar,
+                listar, editar e excluir.</p>
+            </div>
+          </article>
+
+          <article class="card-projetos">
+            <div class="card-info-projetos">
+              <a href="https://github.com/mariaandrezacs/curso-django"
+                target="_blank">
+                <h3 class="card-title-projetos">Blog com Django</h3>
+              </a>
+              <p class="card-text-projetos">Projeto simples de blog construído
+                com Django e Python.</p>
+            </div>
+          </article>
+
+          <article class="card-projetos">
+            <div class="card-info-projetos">
+              <a
+                href="https://github.com/mariaandrezacs/applications-with-redis-python-and-flask"
+                target="_blank">
+                <h3 class="card-title-projetos">Aplicações com Redis, Python e
+                  Flask</h3>
+              </a>
+              <p class="card-text-projetos">Aplicações simples utilizando Redis
+                como banco de dados em projetos com Python e Flask.</p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Contato -->
+      <section id="contato" class="contato-container">
+        <h2>Contatos</h2>
+        <div class="contato">
+          <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="form">
+          <form action>
+            <!-- Aqui você pode adicionar inputs futuramente -->
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <strong>&copy; 2025 Macs. Todos os direitos reservados.</strong>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+  </body>
 </html>
